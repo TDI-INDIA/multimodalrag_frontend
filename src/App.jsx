@@ -199,7 +199,7 @@ const FileUploadWithChatbot = () => {
                   <strong>You:</strong> {chat.user}
                 </p>
                 <p className="bot-message">
-                  <strong>Bot:</strong> {chat.bot}
+                  <strong>Bot:</strong> <pre>{chat.bot}</pre>
                 </p>
               </div>
             ))}
