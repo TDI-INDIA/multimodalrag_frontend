@@ -31,7 +31,7 @@ const FileUploadWithChatbot = () => {
 
     try {
       // Post file to upload endpoint
-      const response = await axios.post('https://96a6-2409-40c4-117d-531e-127-381b-b096-6c7a.ngrok-free.app/upload', formData, {
+      const response = await axios.post('https://multimodal-backend.onrender.com/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -55,7 +55,7 @@ const FileUploadWithChatbot = () => {
 
     try {
       // Post the message to the query endpoint
-      const response = await axios.post('https://96a6-2409-40c4-117d-531e-127-381b-b096-6c7a.ngrok-free.app/query', { query: message });
+      const response = await axios.post('https://multimodal-backend.onrender.com/query', { query: message });
       console.log('Message sent successfully:', response.data);
 
       // Update chat history with the new message and response
