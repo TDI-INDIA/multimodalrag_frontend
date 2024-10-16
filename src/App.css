@@ -93,6 +93,9 @@ p {
 
 .bot-message {
   align-self: flex-end;
+  white-space: pre-wrap; /* Handle preformatted text inside <pre> */
+  word-wrap: break-word; /* Ensure long words break correctly */
+  overflow-wrap: break-word; /* Support older browsers for word wrapping */
   background-color: #f1f1f1;
   color: #333;
   border-left: 4px solid #666;
